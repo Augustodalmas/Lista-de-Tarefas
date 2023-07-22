@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>TODO List</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <script>
+      function adicionarNovoAFazer(event) {
+        event.preventDefault(); // Evita o reload da página
+
+        const novoItemEL = document.getElementById("novaAcao");
+        const listaEL = document.getElementById("lista");
+        const vazio = novoItemEL.value.trim();
+
+        if (vazio !== "") {
+          listaEL.innerHTML += `<li>${novoItemEL.value}</li>`;
+          novoItemEL.value = "";
+        } else {
+          alert("Preencha alguma atividade!");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="formulario">
+      <form onsubmit="adicionarNovoAFazer(event)">
+        <label for="novaAcao">Novo a fazer:</label>
+        <input id="novaAcao" placeholder="Digite sua nova ação" />
+        <button type="submit" id="btn-enviar">Adicionar</button>
+      </form>
+    </div>
+
+    <ul id="lista">
+      <li>Levantar da cama</li>
+      <li>Fazer essa questão</li>
+      <li>Estudar programção</li>
+    </ul>
+  </body>
+</html>
+
+<!---->

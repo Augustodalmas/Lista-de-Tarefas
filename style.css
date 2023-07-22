@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+#formulario {
+  width: 500px;
+  margin: 0px auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#lista {
+  margin: 20px auto;
+  list-style-position: inside;
+  width: 300px;
+  height: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+#btn-enviar {
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: black;
+  color: white;
+}
